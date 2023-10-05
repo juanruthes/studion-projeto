@@ -1,0 +1,48 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+li{
+    margin-right: 0.625rem;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 9fr; /* fração de 1 parte para 9 */
+}
+
+.navbar__links{
+    justify-self: end; /* Vai jogar o menu para a direita */
+}
+
+.navbar__links a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar__links a:hover{
+    color: #FFC500;
+}
