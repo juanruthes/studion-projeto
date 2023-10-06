@@ -1,6 +1,8 @@
 :root{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-primary: #FFC500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
+    --default-padding: 1rem;
 }
 
 *{
@@ -9,6 +11,7 @@
 
 body{
     margin: 0;
+    padding-top: 7.75rem;
 }
 
 ul{
@@ -17,17 +20,19 @@ ul{
     padding-left: 0;
 }
 
-li{
-    margin-right: 0.625rem;
+h6{
+    margin: 0;
 }
 
 .navbar{
     position: fixed;
+    z-index: 1; /* prioridade em sobreposição de outros elementos (navbar fixo independentemente da configuração de outros  elementos for "relative ou absolute") */
     background-color: #000;
     color: #fff;
     top: 0;
     left: 0;
     width: 100vw;
+    height: 7.75rem;
     padding: 0 1rem;
     display: grid;
     align-items: center;
@@ -41,8 +46,80 @@ li{
 .navbar__links a{
     color: #FFF;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .navbar__links a:hover{
-    color: #FFC500;
+    color: var(--color-primary)
 }
+
+.navbar__links li{
+    margin-right: 3rem; /* Espaçamento dos itens do menu em px (48px/16 = 3rem) */
+    font-size: .875rem; /* 14 px */
+    text-transform: uppercase;
+
+}
+
+.logo-studion{
+    font-size: 2.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.2ch; /* relativo ao tamanho da altura do glifo zero da fonte */
+}
+
+.copy--primary{
+    color: var(--color-primary)
+}
+
+.logo-studion__subtitle{
+    font-size: .875rem; /* 14 px */
+    font-weight: 300;
+    float: right;
+}
+
+#slider{
+    padding: var(--default-padding);
+    background-color: #000;
+    color: #fff;
+}
+
+.slide{
+    height: calc(100vh - 7.75rem);
+    position: relative; /* Vai travar o "slide__copy" dentro da area do "slide" */
+
+}
+
+.slide__background-image{
+ /* vai cobrir a div inteira, sem repetir a imagem */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+
+.slide__copy h6{
+    font-size: 0.94rem ;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem; /* kerning (espaçamento entre letras) */
+}
+
+.slide__copy h2{
+    font-size: 6.25rem ;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+
+}
+
+.slide__copy h2 span{
+    display: block; /* quebra de linha no texto "Creative Minds" */
+}
+
