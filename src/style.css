@@ -1,7 +1,8 @@
 :root{
-    --color-primary: #FFC500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-primary: #FFC500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
+    --default-padding: 1rem;
 }
 
 *{
@@ -19,9 +20,13 @@ ul{
     padding-left: 0;
 }
 
+h6{
+    margin: 0;
+}
 
 .navbar{
     position: fixed;
+    z-index: 1; /* prioridade em sobreposição de outros elementos (navbar fixo independentemente da configuração de outros  elementos for "relative ou absolute") */
     background-color: #000;
     color: #fff;
     top: 0;
@@ -52,6 +57,7 @@ ul{
     margin-right: 3rem; /* Espaçamento dos itens do menu em px (48px/16 = 3rem) */
     font-size: .875rem; /* 14 px */
     text-transform: uppercase;
+
 }
 
 .logo-studion{
@@ -71,3 +77,49 @@ ul{
     font-weight: 300;
     float: right;
 }
+
+#slider{
+    padding: var(--default-padding);
+    background-color: #000;
+    color: #fff;
+}
+
+.slide{
+    height: calc(100vh - 7.75rem);
+    position: relative; /* Vai travar o "slide__copy" dentro da area do "slide" */
+
+}
+
+.slide__background-image{
+ /* vai cobrir a div inteira, sem repetir a imagem */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+
+.slide__copy h6{
+    font-size: 0.94rem ;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem; /* kerning (espaçamento entre letras) */
+}
+
+.slide__copy h2{
+    font-size: 6.25rem ;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+
+}
+
+.slide__copy h2 span{
+    display: block; /* quebra de linha no texto "Creative Minds" */
+}
+
