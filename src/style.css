@@ -1,4 +1,5 @@
 :root{
+    --color-primary: #FFC500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -9,6 +10,7 @@
 
 body{
     margin: 0;
+    padding-top: 7.75rem;
 }
 
 ul{
@@ -17,9 +19,6 @@ ul{
     padding-left: 0;
 }
 
-li{
-    margin-right: 0.625rem;
-}
 
 .navbar{
     position: fixed;
@@ -28,6 +27,7 @@ li{
     top: 0;
     left: 0;
     width: 100vw;
+    height: 7.75rem;
     padding: 0 1rem;
     display: grid;
     align-items: center;
@@ -41,8 +41,33 @@ li{
 .navbar__links a{
     color: #FFF;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .navbar__links a:hover{
-    color: #FFC500;
+    color: var(--color-primary)
+}
+
+.navbar__links li{
+    margin-right: 3rem; /* Espaçamento dos itens do menu em px (48px/16 = 3rem) */
+    font-size: .875rem; /* 14 px */
+    text-transform: uppercase;
+}
+
+.logo-studion{
+    font-size: 2.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.2ch; /* relativo ao tamanho da altura do glifo zero da fonte */
+}
+
+.copy--primary{
+    color: var(--color-primary)
+}
+
+.logo-studion__subtitle{
+    font-size: .875rem; /* 14 px */
+    font-weight: 300;
+    float: right;
 }
