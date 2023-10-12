@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+
 :root{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    --color-copy: #333;
     --color-primary: #FFC500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
     --default-padding: 1rem;
+    color: var(--color-copy)
 }
 
 *{
@@ -12,6 +16,17 @@
 body{
     margin: 0;
     padding-top: 7.75rem;
+}
+
+header,
+main,
+footer{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 ul{
@@ -27,16 +42,21 @@ h6{
 .navbar{
     position: fixed;
     z-index: 1; /* prioridade em sobreposição de outros elementos (navbar fixo independentemente da configuração de outros  elementos for "relative ou absolute") */
-    background-color: #000;
-    color: #fff;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 7.75rem;
-    padding: 0 1rem;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar__container{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 9fr; /* fração de 1 parte para 9 */
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+    /* navbar, navbar__container é importante para centralizar a pagina com a margem estabelecida pelo design (1140px)  */
 }
 
 .navbar__links{
@@ -79,7 +99,7 @@ h6{
 }
 
 #slider{
-    padding: var(--default-padding);
+    padding: var(--default-padding); 
     background-color: #000;
     color: #fff;
 }
@@ -138,7 +158,8 @@ h6{
 
 .btn--slide:hover,
 .btn--slide:active,
-.btn--slide:focus{
+.btn--slide:focus,
+.btn--institutional{
     color: #FFF;
     background-color: var(--color-primary);
     border-color: var(--color-primary);
@@ -152,10 +173,10 @@ h6{
 
 }
 
-
-
 .counter__container{
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
     padding: 4.375rem 1rem;
     letter-spacing: .125rem;
     line-height: 2,25rem;
@@ -163,10 +184,56 @@ h6{
 
 .counter__container h3{
     font-size: 2.1875rem;
-
 }
 
 .counter__container h3 small{
     display: block;
     font-size: 1.25rem;
+}
+
+/* Seção Institucional */
+
+.institutional{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem; /* Espaçamento entre a imagem e o texto */
+    align-items: center;
+    padding: 4.5625rem 0 5.3125rem 0;
+}
+
+.institutional__copy{
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6{
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .0625rem; /* kerning (espaçamento entre letras) */ 
+    margin: 0;   
+}
+
+.institutional__copy h4{
+    margin-top: 1.625rem;
+    font-size: 1.5625rem;
+    font-weight: 700;
+}
+
+.institutional__copy p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.8675rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional:hover{
+    color: var(--color-copy);
+    background: unset;
+    border-color: var(--color-primary);
+}
+
+.institutional__image{
+    max-width: 550px;
 }

@@ -4,33 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap" rel="stylesheet">
     <title>Studion</title>
   </head>
 
   <body>
     <nav class="navbar">
-      <h1 class="logo-studion">Studi<span class="copy--primary">on</span>
-        <span class="logo-studion__subtitle">Eventos</span></h1>
-      <ul class="navbar__links">
-        <li>
-          <a href="#Empresa"> Empresa </a>
-        </li>
-        <li>
-          <a href="#Eventos"> Eventos </a>
-        </li>
-        <li>
-          <a href="#Galeria"> Galeria </a>
-        </li>
-        <li>
-          <a href="#Depoimentos"> Depoimentos </a>
-        </li>
-        <li>
-          <a href="#Contatos"> Contatos </a>
-        </li>
-      </ul>
+      <div class="container navbar__container">
+        <h1 class="logo-studion">Studi<span class="copy--primary">on</span>
+          <span class="logo-studion__subtitle">Eventos</span></h1>
+        <ul class="navbar__links">
+          <li>
+            <a href="#Empresa"> Empresa </a>
+          </li>
+          <li>
+            <a href="#Eventos"> Eventos </a>
+          </li>
+          <li>
+            <a href="#Galeria"> Galeria </a>
+          </li>
+          <li>
+            <a href="#Depoimentos"> Depoimentos </a>
+          </li>
+          <li>
+            <a href="#Contatos"> Contatos </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <header>
@@ -52,7 +51,7 @@
 
     <main>
       <section id="counter">
-        <ul class="counter__container">
+        <ul class="container counter__container">
           <li>
             <h3>+ de 500
               <small>eventos realizados</small>
@@ -73,18 +72,16 @@
         </ul>
       </section>
 
-      <section id="">
-        <div></div>
-        <div>
-          <img src="./image/institutional.jpg" />
+      <section class="container institutional">
+        <img class="institutional__image" src="./image/institutional.jpg" alt="Imagem institucional"/>
+        <div class="institutional__copy">
+
           <h6>Fazemos seu evento acontecer</h6>
           <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-            veniam, voluptatibus molestias, earum nihil, at consequuntur
-            repellendus assumenda animi voluptat
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
           </p>
-          <button>Saiba Mais</button>
+          <button class="btn btn--institutional">Saiba Mais</button>
         </div>
       </section>
 
