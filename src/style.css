@@ -27,6 +27,7 @@ footer{
 .container{
     max-width: 1140px;
     margin: 0 auto;
+    /* Importantissimo para criar a margem da pagina centralizada conforme design */
 }
 
 ul{
@@ -156,21 +157,19 @@ h6{
     transition: 0.3s all ease;
 }
 
-.btn--slide:hover,
-.btn--slide:active,
-.btn--slide:focus,
+.btn:hover, /* mudar para btn--slide caso der erro */
+.btn:active,
+.btn:focus,
 .btn--institutional{
     color: #FFF;
     background-color: var(--color-primary);
     border-color: var(--color-primary);
-
 }
 
 #counter{
     background-color: var(--color-primary);
     color: #FFF;
     text-transform: uppercase;
-
 }
 
 .counter__container{
@@ -232,8 +231,65 @@ h6{
     color: var(--color-copy);
     background: unset;
     border-color: var(--color-primary);
+    box-shadow: 1px 10px 10px var(--color-copy)
 }
 
 .institutional__image{
     max-width: 550px;
 }
+
+/* Seção Cotação */
+
+/* Efeito parallaxx */
+.quote{
+    background-image: url(./image/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ocupa a pagina inteira */
+    background-position: center;
+}
+
+.quote__container{
+    min-height: 80vh; /* Altura minima da imagem (80% da vizualização da tela */
+    display: grid;
+    align-items: center; /* Posição horizontal */ 
+    justify-items: end; /* Posição vertical, jogando para a esquerda */
+
+}
+
+.quote__copy{
+    background-color: #FFF;
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6{
+    font-size: .9375rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch; /* Quebra de linha */
+    margin: 0;
+}
+
+.quote__copy h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -.1875rem;
+    line-height: 5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.quote__copy h2 span{
+    display: block; /* Quebra de linha */
+}
+    
+.btn--quote{
+    border-color: #000;
+    color: #000;
+    background-color: unset;
+}
+
