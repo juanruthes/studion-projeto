@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 
 :root{
     font-family: 'Montserrat', sans-serif;
@@ -97,6 +100,7 @@ h6{
     font-size: .875rem; /* 14 px */
     font-weight: 300;
     float: right;
+
 }
 
 #slider{
@@ -293,3 +297,84 @@ h6{
     background-color: unset;
 }
 
+/* Rodapé */
+
+.footer{
+    background-color: #000;
+    color: #FFF;
+    padding: 0 1rem;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion{
+    justify-self: start;
+    margin: 0;
+}
+
+.logo-studion__subtitle{
+    display: block;
+}
+
+.footer__form{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 9ch auto;
+    gap: 1.25rem; /* Espaçamento entre o label e o input */
+
+}
+
+.footer__form fieldset{
+    position: relative;
+    border: unset;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer__form label{
+    font-size: .875rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.0625rem;
+    margin: 0;
+}
+
+.footer__form input{
+    width: 100%;
+    font-size: .875rem;
+    font-weight: 700;
+    color: #000;
+    padding: 1.3125rem 0 1rem 1rem;
+    background-color: var(--color-primary);
+    border: unset;
+}
+
+.footer__form input::placeholder{
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer__form input:focus{
+    outline: unset;
+}
+
+
+.footer__social{
+    justify-self: end;
+}
+
+
+.footer__form button{
+    border: unset;
+    width: 3.375rem;
+    height: 3.33rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
