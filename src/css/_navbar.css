@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  z-index: 1; /* prioridade em sobreposição de outros elementos (navbar fixo independentemente da configuração de outros  elementos for "relative ou absolute") */
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.navbar__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 9fr; /* fração de 1 parte para 9 */
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+  /* navbar, navbar__container é importante para centralizar a pagina com a margem estabelecida pelo design (1140px)  */
+}
+
+.navbar__links {
+  justify-self: end; /* Vai jogar o menu para a direita */
+}
+
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbar__links a.active {
+  color: var(--color-primary);
+}
+
+.navbar__links a:hover {
+  color: var(--color-primary);
+}
+
+.navbar__links li {
+  margin-right: 3rem; /* Espaçamento dos itens do menu em px (48px/16 = 3rem) */
+  font-size: 0.875rem; /* 14 px */
+  text-transform: uppercase;
+}

@@ -10,8 +10,13 @@
   <body>
     <nav class="navbar">
       <div class="container navbar__container">
-        <h1 class="logo-studion">Studi<span class="copy--primary">on</span>
-          <span class="logo-studion__subtitle">Eventos</span></h1>
+        
+        <h1 class="logo-studion">
+          <a href="index.html">
+            Studi<span class="copy--primary">on</span>
+            <span class="logo-studion__subtitle">Eventos</span>
+          </a>
+        </h1>
         <ul class="navbar__links">
           <li>
             <a href="enterprise.html"> Empresa </a>
@@ -26,75 +31,61 @@
             <a href="testimonials.html"> Depoimentos </a>
           </li>
           <li>
-            <a href="contact.html"> Contatos </a>
+            <a class="active" href="contact.html"> Contatos </a>
           </li>
         </ul>
       </div>
     </nav>
 
     <header>
-      <div id="slider">
-        <div class="slide">
-          <img 
-          class="slide__background-image" 
-          src="./image/banner.jpg" 
-          alt="Studion Banner">
-          <div class="slide__copy">
-            <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
-            <h2><span class="copy--primary">Creative</span>
-              Minds</h2>
-            <button  class="btn btn--slide">Saiba Mais</button>
+      <div class="hero">
+        <img src="./image/contact.jpg" alt="" class="hero__background">
+        <div class="container hero__container">
+          <div class="hero__copy">
+            <h2>.contato</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores nulla iusto. Totam, modi. Esse atque aliquam repudiandae voluptatibus blanditiis deserunt, vero quod ullam, assumenda itaque saepe nihil dignissimos eligendi.</p>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="counter">
-        <ul class="container counter__container">
-          <li>
-            <h3>+ de 500
-              <small>eventos realizados</small>
-            </h3>
-          </li>
-          <li>
-            <h3>+ de 1.000.000
-              <small>de ingressos vendidos</small>
-            </h3>
-          </li>
-          <li>
-            <h3>+ de 300
-              <small>
-                empresas atendidas
-              </small>
-            </h3>
-          </li>
-        </ul>
-      </section>
+      <section class="contact">
+        <section class="contact__info">
+          <h3>Liga pra gente</h3>
+          <span>
+            <i class="fa-solid fa-phone fa-2x">
+            +55 48 3223 - 5769
+            </i></span>
+          <span>
+            <i class="fa-brands fa-whatsapp fa-2x">
+            +55 48 99943-7777
+            </i>
+          </span>
+          <h3>Venha conhecer a nossa casa</h3>
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            </i>
+            Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+          </span>
+        </section>
 
-      <section class="container institutional">
-        <img class="institutional__image" src="./image/institutional.jpg" alt="Imagem institucional"/>
-        <div class="institutional__copy">
+        <section class="contact_form">
+          <h3>Deixe sua mensagem</h3>
+            <form action="">
+              <label for="name">Seu nome</label>
+              <input id="name" type="text"/>
+              <label for="email">Seu e-mail</label>
+              <input id="email" type="email"/>
+              <label for="message">Sua mensagem</label>
+              <input id="message" type=""/>
+              <button class="btn btn--contact">Enviar</button>
+            </form>
+        </section>
 
-          <h6>Fazemos seu evento acontecer</h6>
-          <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-          </p>
-          <button class="btn btn--institutional">Saiba Mais</button>
-        </div>
-      </section>
+        <section class="maps">
 
-      <section class="quote">
-        <div class="container quote__container">
-          <div class="quote__copy">
-            <h6>
-              Você informa a temática e nós planejamos um evento com tecnologia e
-            </h6>
-            <h2><span class="copy--primary">Muito+ </span>diversão</h2>
-            <button class="btn btn--quote">Fazer cotação</button>
-          </div>
-        </div>
+        </section>
       </section>
     </main>
 

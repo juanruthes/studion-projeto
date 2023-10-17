@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--color-copy);
+}
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
+h6 {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* Importantissimo para criar a margem da pagina centralizada conforme design */
+}
+
+.logo-studion {
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1ch; /* relativo ao tamanho da altura do glifo zero da fonte */
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.logo-studion a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-studion__subtitle {
+  display: block; /* quebra de linha de "eventos" */
+  font-size: 0.875rem; /* 14 px */
+  font-weight: 300;
+}

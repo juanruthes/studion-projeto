@@ -1,0 +1,95 @@
+.footer__form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 9ch auto;
+  gap: 1.25rem; /* Espaçamento entre o label e o input */
+}
+
+.footer__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+  position: relative;
+  border: unset;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.0625rem;
+  margin: 0;
+}
+
+.footer__form input {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #000;
+  padding: 1.3125rem 0 1rem 1rem;
+  background-color: var(--color-primary);
+  border: unset;
+}
+
+.footer__form input::placeholder {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__form input:focus {
+  outline: unset;
+}
+
+.footer__social {
+  justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+  color: #fff;
+}
+
+.footer__social a i:nth-child(2) {
+  color: #000;
+}
+
+.footer hr {
+  border-color: #fff4;
+  margin: 0;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin: 2.375rem 0;
+}
+
+.footer p span {
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.logo-studion__subtitle {
+  display: block;
+}
