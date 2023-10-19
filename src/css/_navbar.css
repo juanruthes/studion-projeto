@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   z-index: 1; /* prioridade em sobreposição de outros elementos (navbar fixo independentemente da configuração de outros  elementos for "relative ou absolute") */
   top: 0;
   left: 0;
@@ -9,8 +9,8 @@
 
 .navbar__container {
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 9fr; /* fração de 1 parte para 9 */
+  align-items: center;
   width: 100vw;
   height: 7.75rem;
   padding: 0 1rem;

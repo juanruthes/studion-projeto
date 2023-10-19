@@ -37,55 +37,59 @@
       </div>
     </nav>
 
-    <header>
-      <div class="hero">
-        <img src="./image/contact.jpg" alt="" class="hero__background">
-        <div class="container hero__container">
-          <div class="hero__copy">
-            <h2>.contato</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores nulla iusto. Totam, modi. Esse atque aliquam repudiandae voluptatibus blanditiis deserunt, vero quod ullam, assumenda itaque saepe nihil dignissimos eligendi.</p>
-          </div>
+    <header class="hero">
+      <img src="./image/contact.jpg" alt="" class="hero__background">
+      <div class="container hero__container">
+        <div class="hero__copy">
+          <h2>.contato</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores nulla iusto. Totam, modi. Esse atque aliquam repudiandae voluptatibus blanditiis deserunt, vero quod ullam, assumenda itaque saepe nihil dignissimos eligendi.</p>
         </div>
       </div>
-    </header>
+    </header> 
 
     <main>
       <section class="contact">
         <section class="contact__info">
-          <h3>Liga pra gente</h3>
-          <span>
-            <i class="fa-solid fa-phone fa-2x">
-            +55 48 3223 - 5769
-            </i></span>
-          <span>
-            <i class="fa-brands fa-whatsapp fa-2x">
-            +55 48 99943-7777
-            </i>
-          </span>
-          <h3>Venha conhecer a nossa casa</h3>
-          <span>
-            <i class="fa-solid fa-location-dot"></i>
-            </i>
-            Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
-          </span>
+          <div class="contact__info__container">
+            <h3>Liga pra gente</h3>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              <p>+55 48 3223 - 5769</p>
+            </span>
+            <span>
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>+55 48 99943 - 7777</p>
+            </span>
+            <h3>Venha conhecer a nossa casa</h3>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              Rua Miguel Daux, 129 - Coqueiros Florianópolis / SC
+            </span>
+          </div>
         </section>
 
-        <section class="contact_form">
-          <h3>Deixe sua mensagem</h3>
-            <form action="">
-              <label for="name">Seu nome</label>
-              <input id="name" type="text"/>
-              <label for="email">Seu e-mail</label>
-              <input id="email" type="email"/>
-              <label for="message">Sua mensagem</label>
-              <input id="message" type=""/>
-              <button class="btn btn--contact">Enviar</button>
-            </form>
+        <section class="contact__form">
+          <form class="contact__form__container" action="">
+            <h3>Deixe sua mensagem</h3>
+            <label for="name">Seu nome</label>
+            <input id="name" type="text"/>
+            <label for="email">Seu e-mail</label>
+            <input id="email" type="email"/>
+            <label for="message">Sua mensagem</label>
+            <input id="message" type=""/>
+            <button class="btn btn--contact">Enviar</button>
+          </form>
         </section>
+      </section>
 
-        <section class="maps">
-
-        </section>
+      <section class="maps">
+        <iframe 
+          src="https://maps.google.com/maps?q=Rua%20Miguel%20Daux,%20129%20-%20Coqueiros%20Florian%C3%B3polis%20/%20SC&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          frameborder="0" 
+          scrolling="no" 
+          marginheight="0" 
+          marginwidth="0">
+        </iframe>
       </section>
     </main>
 

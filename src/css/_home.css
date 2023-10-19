@@ -1,12 +1,11 @@
 #slider {
-  padding: var(--default-padding);
   background-color: #000;
   color: #fff;
 }
 
 .slide {
-  height: calc(100vh - 7.75rem);
   position: relative; /* Vai travar o "slide__copy" dentro da area do "slide" */
+  height: 90vh;
 }
 
 .slide__background-image {
@@ -21,7 +20,8 @@
   position: absolute;
   top: 0;
   left: 0;
-
+  width: 100%;
+  height: 100%;
   display: grid;
   padding-left: 50vw;
   align-items: center;
@@ -43,10 +43,6 @@
 
 .slide__copy h2 span {
   display: block; /* quebra de linha no texto "Creative Minds" */
-}
-
-.institutional__image {
-  max-width: 550px;
 }
 
 /* Seção Cotação */
@@ -110,6 +106,10 @@
   line-height: 1.8675rem;
   margin-bottom: 0;
   margin-bottom: 2.5rem;
+}
+
+.institutional__image {
+  max-width: 550px;
 }
 
 /* Efeito parallaxx */
