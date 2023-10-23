@@ -1,0 +1,10 @@
+.enterprise {
+  background: #000;
+}
+
+.enterprise__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  padding: 125px 0;
+}
