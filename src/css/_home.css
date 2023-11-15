@@ -1,6 +1,32 @@
-#slider {
+.slider {
   background-color: #000;
   color: #fff;
+}
+
+.slider__prev,
+.slider__next {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.5;
+}
+
+.slider__prev {
+  left: 1rem;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+
+.slider__next {
+  right: 1rem;
+  transform: rotate(135deg);
+}
+
+.slider__prev::before,
+.slider__next::before {
+  content: "";
 }
 
 .slide {

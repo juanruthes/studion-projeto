@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>Studion</title>
   </head>
@@ -33,7 +35,7 @@
     </nav>
 
     <header>
-      <div id="slider">
+      <div class="slider">
         <div class="slide">
           <img 
           class="slide__background-image" 
@@ -44,6 +46,36 @@
               <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
               <h2><span class="copy--primary">Creative</span>
                 Minds</h2>
+              <button class="btn btn--slide">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img 
+          class="slide__background-image" 
+          src="./image/banner2.jpg" 
+          alt="Studion Banner">
+          <div class="slide__copy">
+            <div class="slide__copy__container">
+              <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
+              <h2><span class="copy--primary">Fest</span>
+                Forward</h2>
+              <button class="btn btn--slide">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img 
+          class="slide__background-image" 
+          src="./image/banner3.jpg" 
+          alt="Studion Banner">
+          <div class="slide__copy">
+            <div class="slide__copy__container">
+              <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
+              <h2><span class="copy--primary">Show</span>
+                Event</h2>
               <button class="btn btn--slide">Saiba Mais</button>
             </div>
           </div>
@@ -140,5 +172,11 @@
         <small class="logo--studion"></small>Studi<span class="copy--primary">on</span> - Todos os direitos reservados</small>
       </p>
     </footer>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
