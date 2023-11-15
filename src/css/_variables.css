@@ -1,0 +1,6 @@
+:root {
+  --color-copy: #333;
+  --color-copy--alt: #ccc;
+  --color-primary: #ffc500; /* Variavel criada para utilização de cor em varias seções da pagina, sem a necessidade de copiar e colar a cor (RGB, HEXADECIMAL, etc) */
+  --default-padding: 1rem;
+}

@@ -1,0 +1,185 @@
+.slider {
+  background-color: #000;
+  color: #fff;
+}
+
+.slider__prev,
+.slider__next {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.5;
+}
+
+.slider__prev {
+  left: 1rem;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+
+.slider__next {
+  right: 1rem;
+  transform: rotate(135deg);
+}
+
+.slider__prev::before,
+.slider__next::before {
+  content: "";
+}
+
+.slide {
+  position: relative; /* Vai travar o "slide__copy" dentro da area do "slide" */
+  height: 90vh;
+}
+
+.slide__background-image {
+  /* vai cobrir a div inteira, sem repetir a imagem */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide__copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding-left: 50vw;
+  align-items: center;
+}
+
+.slide__copy h6 {
+  font-size: 0.94rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem; /* kerning (espaçamento entre letras) */
+  margin: 0;
+}
+
+.slide__copy h2 {
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  line-height: 6.25rem;
+}
+
+.slide__copy h2 span {
+  display: block; /* quebra de linha no texto "Creative Minds" */
+}
+
+/* Seção Cotação */
+
+.counter {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.counter__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+  padding: 4.375rem 1rem;
+  letter-spacing: 0.125rem;
+  line-height: 2, 25rem;
+}
+
+.counter__container h3 {
+  font-size: 2.1875rem;
+}
+
+.counter__container h3 small {
+  display: block;
+  font-size: 1.25rem;
+}
+
+/* Seção Institucional */
+
+.institutional {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem; /* Espaçamento entre a imagem e o texto */
+  align-items: center;
+  padding: 4.5625rem 0 5.3125rem 0;
+}
+
+.institutional__copy {
+  padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem; /* kerning (espaçamento entre letras) */
+  margin: 0;
+}
+
+.institutional__copy h4 {
+  margin-top: 1.625rem;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.institutional__copy p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.8675rem;
+  margin-bottom: 0;
+  margin-bottom: 2.5rem;
+}
+
+.institutional__image {
+  max-width: 550px;
+}
+
+/* Efeito parallaxx */
+.quote {
+  background-image: url(../image/parallax.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ocupa a pagina inteira */
+  background-position: center;
+}
+
+.quote__container {
+  min-height: 80vh; /* Altura minima da imagem (80% da vizualização da tela */
+  display: grid;
+  align-items: center; /* Posição horizontal */
+  justify-items: end; /* Posição vertical, jogando para a esquerda */
+}
+
+.quote__copy {
+  background-color: #fff;
+  padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  max-width: 53ch; /* Quebra de linha */
+  margin: 0;
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.1875rem;
+  line-height: 5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1.875rem;
+}
+
+.quote__copy h2 span {
+  display: block; /* Quebra de linha */
+}
