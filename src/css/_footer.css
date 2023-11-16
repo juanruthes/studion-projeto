@@ -1,8 +1,15 @@
 .footer__form {
   display: grid;
   place-items: center;
-  grid-template-columns: 9ch auto;
+  grid-template-columns: unset;
   gap: 1.25rem; /* Espaçamento entre o label e o input */
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .footer__form {
+    grid-template-columns: 9ch auto;
+  }
 }
 
 .footer__email {
@@ -11,8 +18,15 @@
   position: relative;
   border: unset;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
   width: 100%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .footer__email {
+    padding: 0;
+  }
 }
 
 .footer__form label {
@@ -43,7 +57,14 @@
 }
 
 .footer__social {
-  justify-self: end;
+  justify-self: center;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .footer__social {
+    justify-self: end;
+  }
 }
 
 .footer__social a,
@@ -80,14 +101,32 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: unset;
+  grid-template-rows: repeat(3, auto);
   align-items: center;
-  padding: 5.25rem 0 3.75rem 0;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: unset;
+    padding: 5rem 0;
+  }
 }
 
 .footer .logo-studion {
-  justify-self: start;
+  justify-self: center;
   margin: 0;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .footer .logo-studion {
+    justify-self: start;
+  }
 }
 
 .footer__form button {

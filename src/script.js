@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  // Menu
+  $(".navbar__menu-btn").on("click", function () {
+    $(".navbar__links").toggleClass("active");
+    $(this).find("i").toggleClass("fa-bars");
+    $(this).find("i").toggleClass("fa-times");
+  });
+
+  // Carrossel
   const slickOptions = {
     autoplay: true,
     autoplaySpeed: 5000,
@@ -10,6 +18,7 @@ $(document).ready(function () {
   };
   $(".slider").slick(slickOptions);
 
+  // Email
   $(".footer__form-button").on("click", () => {
     const email = $("#email").val();
     Email.send({
