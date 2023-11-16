@@ -30,6 +30,20 @@
   box-shadow: 1px 10px 10px var(--color-copy);
 }
 
+.btn--institutional,
+.btn--quote {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--institutional,
+  .btn--quote {
+    display: unset;
+    margin: unset;
+  }
+}
+
 .btn--contact:hover {
   color: #fff;
 }
